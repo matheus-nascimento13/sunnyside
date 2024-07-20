@@ -1,0 +1,160 @@
+@import"../node_modules/bootstrap/scss/functions";
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 8,
+  7: $spacer * 9,
+  8: $spacer * 12,
+  9: $spacer * 20,
+  10: $spacer * 25,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  xxs: 350px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1550px,
+);
+
+$primary:       blue;
+$secondary:     gray;
+$success:       hsl(168, 34%, 41%);
+$info:          hsl(167, 40%, 24%);
+$warning:       yellow;
+$danger:       hsl(198, 62%, 26%);
+$light:         white;
+$dark:          black;
+@import "../node_modules/bootstrap/scss/variables";
+
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: hsl(168, 34%, 41%);
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+$grid-breakpoints: (
+  xs: 0,
+  xxs: 350px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+.transform {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.learn {
+    border-bottom: 6px solid hsl(51, 100%, 49%);
+    display: inline-block;
+}
+
+.testimonial {
+    font-family: "Fraunces", serif;
+    font-weight:400;
+
+    .client {
+        color: hsl(232, 10%, 55%);
+    }
+}
+.hover-text:hover {
+    color:white
+  }
+
+@media(min-width: 991px) {
+    .header {
+        background-image: url("../images/desktop/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    
+        font-family: "Fraunces", serif;
+        font-weight: 400;
+
+        .contact {
+            background-color: white;
+        }
+    }
+    .cherry{
+        background-image: url("../images/desktop/image-graphic-design.jpg");
+       min-height: 60vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .orange{
+        background-image: url("../images/desktop/image-photography.jpg");
+        min-height: 60vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media(max-width: 991px) {
+    .header {
+        background-image: url("../images/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 80vh;
+       
+
+        .sidebar {
+            background-image: url("../images/mobile/image-header.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+                .contact {
+                    background-color: hsl(51, 100%, 49%);
+                }
+
+        }
+    }
+
+    .cherry {
+        background-image: url("../images/mobile/image-graphic-design.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 80vh;
+    }
+
+    .orange {
+        background-image: url("../images/mobile/image-photography.jpg");
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        background-size: cover;
+    }
+}

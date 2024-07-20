@@ -1,0 +1,16 @@
+{
+  "name": "matheus",
+  "version": "1.0.0",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+
+    "build-css": "sass scss/style.scss css/style.css"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
